@@ -1,0 +1,12 @@
+Sectiuni:
+1. Prezentare scor aferent cautarii intre 0-1.
+2. Prezentare nota companiei pe baza recenziilor sub forma de stele.
+3. Prezentare descriere scurta si lunga a companiei.
+4. Prezentare locatie principala pe harta.
+5. Prezentarea tuturor locatiilor sub forma de lista
+6. Afisat steag pe baza codului de tara.
+7. Date despre locatia companiei (tara, oras, strada, cod postal, numar principal de telefon, mail).
+8. Linkuri social media
+9. Tehnologii folosite
+10. Prezentare recenzii sub forma de lista.
+11. Sectiune de contact

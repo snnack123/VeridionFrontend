@@ -1,27 +1,33 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application constitutes a prototype aimed at developing a platform utilizing React, Vite, and TypeScript technologies, with the primary objective of efficiently obtaining information about companies.
+After the user registers and logs in, a section will be available on the homepage where the user can input details about a company and press the search button. After the search, a component will appear presenting the company details, along with a print button to download a PDF containing those details.
 
-Currently, two official plugins are available:
+These constitute the procedural steps required to perform the cloning of the project and its initiation:
+- Clone the project
+- Execute ```npm i``` to install the packages
+- Create a ```.env``` file based on ```.env.example``
+- Execute ```npm run dev``` in the terminal to initiate the application.
+- Open a web browser and enter ```http://localhost:5173/```.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Main implemented routes
+- ```/``` -  This route represents the homepage where we can see the navbar.
+- ```/login``` - The login page. For this page, I utilized the Yup and Formik libraries for validations.
+- ```/register``` - The register page. For this page, I utilized the Yup and Formik libraries for validations.
 
-## Expanding the ESLint configuration
+## Most important libraries
+- React-redux
+- React-router-dom
+- Tailwindcss
+- Axios
+- Yup
+- Formik
+- React-to-pdf
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ENV example
+VITE_API_URL =
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Unfinished work
+- Technical debt - The code requires restructuring. In essence, it is advisable to generate several smaller components and CSS classes that are essential across multiple pages.
+- Paginate reviews - After resolving the issue with the Google API, pagination needs to be implemented for reviews.
+- Images - Integration of images returned by the Google API into the 'Company Overview' section needs to be added.

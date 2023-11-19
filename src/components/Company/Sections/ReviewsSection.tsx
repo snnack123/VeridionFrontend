@@ -45,7 +45,7 @@ const ReviewsSection = ({ reviews }: ReviewsSectionProps) => {
 
   return (
     <div className="overViewContainer">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+      <div className="mx-auto max-w-2xl md:px-4 md:py-8 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-12 lg:gap-x-8 lg:px-8">
         <div className="lg:col-span-4">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
             Customer Reviews

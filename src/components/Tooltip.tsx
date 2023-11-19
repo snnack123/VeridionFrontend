@@ -20,7 +20,7 @@ const Tooltip = ({ text, children }: TooltipProps) => {
     <div className="relative inline-block" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {children}
       {showTooltip && (
-        <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-gray-800 text-white p-2 rounded min-w-[20rem]">
+        <div className="absolute top-full right-full transform translate-x-1/2 bg-gray-800 text-white p-2 rounded min-w-[5rem] sm:min-w-[20rem]">
           {text}
         </div>
       )}

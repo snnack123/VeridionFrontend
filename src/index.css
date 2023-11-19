@@ -68,19 +68,19 @@
 }
 
 h1 {
-    @apply mb-20 text-3xl font-extrabold leading-none text-center tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white;
+    @apply mb-10 md:mb-20 text-3xl font-extrabold leading-none text-center tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white;
 }
 
 h2 {
-    @apply mb-10 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white;
+    @apply mb-5 md:mb-10 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white;
 }
 
 h3 {
-    @apply mb-10 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white;
+    @apply mb-5 md:mb-10 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white;
 }
 
 h4 {
-    @apply mb-10 text-lg font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white;
+    @apply mb-5 md:mb-10 text-lg font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white;
 }
 
 .starsContainer, .starsContainer > span{
@@ -88,7 +88,7 @@ h4 {
 }
 
 .overViewContainer {
-    @apply border border-gray-300 rounded-md p-5 bg-white mb-10;
+    @apply border border-gray-300 rounded-md p-5 bg-white mb-5 md:mb-10;
 }
 
 .overViewLine {

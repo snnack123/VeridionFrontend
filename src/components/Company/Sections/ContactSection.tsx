@@ -7,7 +7,7 @@ type ContactSectionProps = {
 
 const ContactSection = ({ details }: ContactSectionProps) => {
   return (
-    <div className="overViewContainer truncate space-y-6">
+    <div className="overViewContainer truncate space-y-6 flex items-center flex-col w-full md:w-auto">
       {details?.primary_phone?.length && 
         <a href={`tel:${details?.primary_phone}`} className="flex">
           <div>

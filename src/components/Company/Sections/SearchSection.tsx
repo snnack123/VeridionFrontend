@@ -92,7 +92,7 @@ const SearchSection = () => {
   });
 
   return (
-    <div className="mx-10 mt-10 flex flex-col justify-center items-center">
+    <div className="my-5 md:my-10 px-5 flex flex-col justify-center items-center">
       <h1>
         Search for a company 
       </h1>
@@ -154,7 +154,7 @@ const SearchSection = () => {
       {error && <p className="text-red-500 max-w-[30rem]">{error}</p>}
       </div>
       {loadingDetails ? <Spinner /> : details &&
-        <div className="my-10 px-10 bg-gray-100 print-search-section-container w-full border border-gray-300 rounded-xl max-w-[80rem]" ref={componentRef as any}>
+        <div className="my-5 md:my-10 px-5 md:px-10 bg-gray-100 print-search-section-container w-full border border-gray-300 rounded-xl max-w-[80rem]" ref={componentRef as any}>
           <h2 className="text-center my-10">Company details</h2>
           <div className="flex flex-wrap justify-between">
             <DetailsSection details={details} loadingReviews={loadingReviews} reviews={reviews} />
@@ -163,10 +163,10 @@ const SearchSection = () => {
           <AddressSection details={details} />
           <OverviewSection details={details} />
           {loadingReviews ? <Spinner /> : <ReviewsSection reviews={reviews} />}
-          <div className="py-6 flex justify-center no-print">
+          <div className="py-3 md:py-6 flex justify-center no-print">
             <button className="formButton items-center" onClick={handlePrint}> 
-              <PrinterIcon className="w-8 h-8 pr-2" /> 
-              <span className="text-lg">Print</span>
+              <PrinterIcon className="w-6 md:w-8 h-6 md:h-8 pr-2" /> 
+              <span className="md:text-lg">Print</span>
             </button>
           </div>
         </div>
